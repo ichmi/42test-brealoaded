@@ -1,4 +1,6 @@
 clear
+cp -rf * ..
+cd ..
 gcc -Wall -Wextra -Werror ex{06..17}/*.c ft_putchar.c test_main.c -o test1.out
 ./test1.out
 
@@ -66,3 +68,7 @@ echo "./ft_display_file testfile"
 echo ""
 rm -f testfile
 make fclean
+cd ..
+rm -rf base_reloaded.h *.c *.out includes/ srcs/ testfile test_runner.sh README.md
+echo ""
+ls
