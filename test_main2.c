@@ -28,12 +28,12 @@ int	main()
 	r1 = ft_range(1, 5);
 	if (r1)
 	{
-		printf("1, 2, 3, 4\n");
+		printf("1 2 3 4\n");
 		for (int i=0; r1[i]; ++i)
-			printf("%d, ", r1[i]);
+			printf("%d ", r1[i]);
 	}
 	else
-		printf("1, 2, 3, 4\n(NULL)\n");
+		printf("1 2 3 4\n(NULL)\n");
 	free(r1);
 
 	printf("\n\n\x1b[38:5:11mTest_2:\x1b[0m\n");
@@ -41,12 +41,12 @@ int	main()
 	r2 = ft_range(-5, -3);
 	if (r2)
 	{
-		printf("-5, -4\n");
+		printf("-5 -4\n");
 		for (int i=0; r2[i]; ++i)
 			printf("%d ", r2[i]);
 	}
 	else
-		printf("-5, -4\n(NULL)");
+		printf("-5 -4\n(NULL)");
 	free(r2);
 
 	printf("\n\n\x1b[38:5:11mTest_3:\x1b[0m\n");
